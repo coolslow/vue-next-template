@@ -1,4 +1,4 @@
-# vue_ng_project
+# vue_next_template
 
 ## Project setup
 ```
