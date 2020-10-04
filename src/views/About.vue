@@ -2,6 +2,13 @@
   <div class="about">
     <h1>This is an about page</h1>
     <p>{{ state.desc }}</p>
+    <!-- use teleport -->
+    <div class="for-teleport">
+      <div id="top-left"></div>
+      <div id="top-right"></div>
+      <div id="bottom-left"></div>
+      <div id="bottom-right"></div>
+    </div>
   </div>
 </template>
 <script>
@@ -22,3 +29,9 @@ const About = defineComponent({
 
 export default About
 </script>
+<style lang="less">
+.about {
+  height: 100%;
+  padding: 20px;
+}
+</style>
