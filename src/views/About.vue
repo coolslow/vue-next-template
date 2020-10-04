@@ -1,14 +1,23 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <p>{{ state.desc }}</p>
   </div>
 </template>
-<script lang="ts">
+<script>
 // REFERENCE: https://v3.vuejs.org/guide/typescript-support.html
-import { defineComponent } from 'vue'
+import { defineComponent, reactive } from 'vue'
 
 const About = defineComponent({
-  // type inference enabled
+  setup() {
+    let state = reactive({
+      desc: 'This is a description section ...'
+    })
+
+    return {
+      state
+    }
+  }
 })
 
 export default About
